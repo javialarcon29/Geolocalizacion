@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+}
+
+#menu {
+  width: 30vw; /* Ancho del menú */
+  overflow-y: scroll; /* Permite desplazamiento vertical */
+  overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+  background-color: yellow; /* Color de fondo del menú */
+  color: blue; /* Color del texto del menú */
+}
+
+.item {
+  background-color: blue; /* Color de fondo de cada elemento */
+  color: yellow; /* Color del texto de cada elemento */
+  margin: 2px; /* Margen alrededor de cada elemento */
+  padding: 8px; /* Relleno dentro de cada elemento */
+}
+
+.item p {
+  font-size: 18px; /* Tamaño de la fuente del párrafo */
+  font-weight: bold; /* Texto en negrita */
+  color: yellow; /* Color del texto */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.item span {
+  font-size: 14px; /* Tamaño de la fuente del span */
+  color: yellow; /* Color del texto */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+#map {
+  left: 32vw; /* Margen izquierdo del mapa */
+  position: fixed; /* Posición fija del mapa */
+  top: 0; /* Posición superior del mapa */
+  width: 70vw; /* Ancho del mapa */
+  height: 100vh; /* Altura del mapa */
+}
+
+.acceso_item {
+  width: fit-content; /* Ancho ajustado al contenido */
+  height: 25px; /* Altura del botón de acceso */
+  text-align: center; /* Alineación del texto al centro */
+  border-radius: 15px; /* Bordes redondeados */
+  border: 2px solid yellow; /* Borde amarillo */
+  padding: 5px; /* Relleno dentro del botón */
+  cursor: pointer; /* Cursor tipo pointer al pasar el ratón */
+  margin-top: 10px; /* Margen superior */
+}
+
+.info_item {
+  width: fit-content; /* Ancho ajustado al contenido */
+  height: 25px; /* Altura del botón de información */
+  text-align: center; /* Alineación del texto al centro */
+  border-radius: 15px; /* Bordes redondeados */
+  border: 2px solid yellow; /* Borde amarillo */
+  padding: 5px; /* Relleno dentro del botón */
+  cursor: pointer; /* Cursor tipo pointer al pasar el ratón */
+  margin-top: 10px; /* Margen superior */
+}
+
+.titulo-container {
+  background-color: blue; /* Fondo azul para el contenedor del título */
+  padding: 20px; /* Relleno alrededor del título */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 10px; /* Margen alrededor del contenedor */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+.titulo {
+  font-family: 'Roboto', sans-serif; /* Nueva tipografía */
+  font-size: 24px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  color: yellow; /* Color del texto */
+  margin: 0; /* Sin margen */
+}
+
+.item:hover {
+  background-color: yellow; /* Color de fondo al pasar el ratón */
+}
+
+.item:hover p {
+  color: blue; /* Color del texto del párrafo al pasar el ratón */
+}
+
+.item:hover span {
+  color: blue; /* Color del texto del span al pasar el ratón */
+}
+
+.item:hover .info_item, .item:hover .acceso_item {
+  color: blue; /* Color del texto al pasar el ratón */
+  border: 1px solid blue; /* Borde azul al pasar el ratón */
+}
